@@ -62,8 +62,6 @@ router.post('/:cid/product/:pid', (req, res) => {
     }
 });
 
-// Opcional: PUT y DELETE
-
 // Actualizar cantidad de producto en carrito
 router.put('/:cid/product/:pid', (req, res) => {
     const { quantity } = req.body;
