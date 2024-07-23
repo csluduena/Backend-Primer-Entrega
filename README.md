@@ -7,24 +7,6 @@ Este proyecto forma parte de la primera entrega para el curso de Backend en la a
 - **Gestión de Productos:** Permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre productos.
 - **Gestión de Carritos:** Permite crear carritos, agregar productos a carritos existentes y listar productos de un carrito específico.
 
-## Estructura del Proyecto
-
-tu-proyecto/
-├── public/
-│ ├── index.html
-│ └── styles.css
-├── data/
-│ ├── productos.json
-│ └── carrito.json
-├── routes/
-│ ├── product-routes.js
-│ └── cart-routes.js
-├── manager/
-│ ├── cart-manager.js
-│ └── product-manager.js
-├── server.js
-└── ...otros archivos
-
 ## Tecnologías Utilizadas
 
 - **Node.js:** Plataforma de desarrollo backend.
