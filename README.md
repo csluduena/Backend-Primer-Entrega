@@ -7,6 +7,24 @@ Este proyecto forma parte de la primera entrega para el curso de Backend en la a
 - **Gestión de Productos:** Permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre productos.
 - **Gestión de Carritos:** Permite crear carritos, agregar productos a carritos existentes y listar productos de un carrito específico.
 
+## Estructura del Proyecto
+
+tu-proyecto/
+├── public/
+│ ├── index.html
+│ └── styles.css
+├── data/
+│ ├── productos.json
+│ └── carrito.json
+├── routes/
+│ ├── product-routes.js
+│ └── cart-routes.js
+├── manager/
+│ ├── cart-manager.js
+│ └── product-manager.js
+├── server.js
+└── ...otros archivos
+
 ## Tecnologías Utilizadas
 
 - **Node.js:** Plataforma de desarrollo backend.
@@ -29,6 +47,7 @@ Este proyecto forma parte de la primera entrega para el curso de Backend en la a
 - `POST /api/carts`: Crea un nuevo carrito.
 - `GET /api/carts/:cid`: Obtiene los productos de un carrito por su ID.
 - `POST /api/carts/:cid/product/:pid`: Agrega un producto al carrito especificado.
+- `DELETE /api/carts/:cid`: Elimina un carrito por su ID.
 
 ## Ejecución del Proyecto
 
@@ -37,6 +56,14 @@ Este proyecto forma parte de la primera entrega para el curso de Backend en la a
 3. Ejecutar el servidor con `node server.js`.
 4. Utilizar Postman u otro cliente API para probar los diferentes endpoints.
 
+## Pruebas con Postman
+
+Para probar los endpoints, puedes utilizar Postman siguiendo estos pasos:
+
+1. Abrir Postman.
+2. Crear una nueva colección y agregar las diferentes peticiones (GET, POST, PUT, DELETE) con las rutas mencionadas en los endpoints.
+3. Probar cada petición y verificar las respuestas del servidor.
+
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Si encuentras algún problema o tienes alguna sugerencia, no dudes en abrir un issue en el repositorio.
@@ -44,4 +71,3 @@ Las contribuciones son bienvenidas. Si encuentras algún problema o tienes algun
 ## Autor
 
 Sebastián Ludueña - [Linkedin](https://www.linkedin.com/in/csluduena/)
-
